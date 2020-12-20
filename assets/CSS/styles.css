@@ -180,6 +180,7 @@ a:hover {
     justify-content: space-around;
     padding-top: 50px;
     background-color: var(--primary-color);
+    scroll-margin-top: 5em;
 }
 
 /* About Me Styles */
@@ -193,9 +194,11 @@ a:hover {
     display: flex;
     justify-content: space-around;
     background-color: var(--primary-color);
+    scroll-margin-top: 5em;
 }
 
 /* Contact Me Section */
+
 
 .contact-me {
     display: flex;
@@ -203,12 +206,14 @@ a:hover {
     height: 200px;
     padding-top: 50px;
     background-color: var(--primary-color);
+    scroll-margin-top: 5em;
 }
 
 .contact-me ul {
     display: flex;
     list-style: none;
     align-items: center;
+    width: 60%;
 }
 
 .contact-me ul li a {
