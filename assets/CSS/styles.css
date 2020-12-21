@@ -1,7 +1,11 @@
+/* Color Variables */
+
 :root {
     --primary-color: rgb(242, 248, 212);
+    --secondary-color: rgb(44, 80, 55);
 }
 
+/* beginning of styles */
 
 
 * {
@@ -10,7 +14,8 @@
     box-sizing: border-box;
   }
 
-  a {
+
+a {
     display: block;
     height: 100%;
 }
@@ -28,7 +33,9 @@ h2 {
     align-items: center;
 }
 
-/* Header Styles */
+
+/* header styles */
+
 
 header {
     display: flex;
@@ -65,7 +72,8 @@ a:hover {
 }
 
 
-/* Hero Styles */
+/* hero styles */
+
 
 .hero {
     display: flex;
@@ -82,14 +90,43 @@ a:hover {
   }
 
 .hero-content {
-    height: 280px;
+    height: 300px;
     display: flex;
     align-items: flex-end;
     font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* My Work Styles*/
+
+  /* about me styles */
+
+
+.bio {
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color  );
+}
+
+.about-me {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    scroll-margin-top: 5em;
+}
+
+.bio-img {
+    height: 350px;
+    width: 75%;
+    margin-left: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 15px;
+}
+
+
+  /* my work styles*/
+
 
 .my-work-container {
     display: grid;
@@ -108,8 +145,8 @@ a:hover {
     border: solid;
 }
 
-.grid-item h3, .grid-item h4 {
-    top: 250px;
+.grid-item h3 {
+    top: 225px;
     position: relative;
     text-align: right;
     margin-right: 15px;
@@ -118,11 +155,25 @@ a:hover {
 }
 
 .grid-item h4 {
+    top: 225px;
+    position: relative;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 1em;
+
+
+}
+
+.grid-item h5 {
     top: 110px;
     position: relative;
     font-size: 1.5em;
     text-align: right;
     margin-right: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
 }
 
 .grid-item span {
@@ -174,10 +225,10 @@ a:hover {
 }
 
 .section-title {
-    border-right: 5px solid rgb(44, 80, 55);
+    border-right: 5px solid var(--secondary-color);
     width: 20%;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(44, 80, 55);
+    color: var(--secondary-color);
 }
 
 .my-work {
@@ -188,30 +239,8 @@ a:hover {
     scroll-margin-top: 5em;
 }
 
-/* About Me Styles */
 
-.bio {
-    width: 60%;
-}
-
-.about-me {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--primary-color);
-    scroll-margin-top: 5em;
-}
-
-.bio-img {
-    height: 350px;
-    width: 75%;
-    margin-left: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    top: 15px;
-}
-
-/* Contact Me Section */
+/* contact me Styles */
 
 
 .contact-me {
@@ -221,6 +250,7 @@ a:hover {
     padding-top: 50px;
     background-color: var(--primary-color);
     scroll-margin-top: 5em;
+    padding-bottom: 10px;
 }
 
 .contact-me ul {
@@ -235,7 +265,7 @@ a:hover {
     margin: 10px 15px;
     margin: 10px 50px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(44, 80, 55);
+    color: var(--secondary-color);
     font-size: 1.5em;
 }
 
@@ -243,11 +273,19 @@ a:hover {
     margin-top: 15px;
 }
 
+/* footer styles */
+
+
 footer {
     height: 100px;
     background-image: url(../images/header-4.JPG);
     background-attachment: fixed;
 }
+
+
+/* beginning of media queries*/
+
+/* styles for screens 980px and below */
 
 @media screen and (max-width: 980px) {
 
@@ -262,7 +300,7 @@ footer {
     .about-me h2, .my-work h2, .contact-me h2  {
         border: none;
         width: 75%;
-        border-bottom: 10px solid rgb(44, 80, 55);
+        border-bottom: 10px solid var(--secondary-color);
         padding: 25px;
     }
 
@@ -314,6 +352,9 @@ footer {
         margin-top: 30px;
     }
 }
+
+
+/* styles for screens 575px and below */
 
 @media screen and (max-width: 575px) {
 
