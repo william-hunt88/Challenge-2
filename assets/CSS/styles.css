@@ -401,12 +401,16 @@ footer {
         grid-row: 4/ span 1;
     }
 
-    .grid-item h4 {
+    .grid-item h5 {
         top: 70px;
     }
 
     .grid-item h3 {
-        top: 175px;
+        top: 125px;
+    }
+
+    .grid-item h4 {
+        top: 125px;
     }
 
 
