@@ -138,6 +138,7 @@ a:hover {
     overflow: hidden;
     z-index: 9999;
     max-width: 100vw;
+    margin-top: 25px;
 }
 
 .grid-item {
@@ -192,7 +193,7 @@ a:hover {
     grid-column: 1/ span 2;
     grid-row: 1/ span 2;
     font-size: 35px;
-    background-image: url(../images/Run-buddy-hero.jpg);
+    background-image: url(../images/joelecox1.github.io_crypto-stock-compare_.png);
     position: relative;
     background-position: 40%;
 }
